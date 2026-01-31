@@ -4,48 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>極致永恆 | 頂級骨灰罐藝術鑑賞 - 全球專業石材防潮數據庫</title>
-    <meta name="description" content="極致永恆專注於地質學標準骨灰罐，提供加拿大碧玉、南非黑金石等頂級防潮材質。內含莫氏硬度分析、SGS 吸水率數據與十二道匠人工藝流程，為生命守護最後的尊嚴。">
-    <meta name="keywords" content="骨灰罐, 骨灰罈, 加拿大碧玉, 防潮骨灰罐, 石材硬度, 殯葬藝術, 頂級骨灰罐推薦, SGS 認證石材">
-    <link rel="canonical" href="https://your-luxury-domain.com/">
-
-    <meta property="og:title" content="極致永恆 | 頂級骨灰罐藝術鑑賞">
-    <meta property="og:description" content="以地質學嚴謹數據，挑選莫氏硬度 6.0 以上原礦，為每一段生命建立絕對安穩的物理空間。">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1615529182904-14819c35db37?q=80&w=1200">
-    <meta property="og:type" content="website">
-
+    <title>福豐石藝 | 頂級骨灰罐藝術鑑賞 - 專利防震防潮技術領航者</title>
+    <meta name="description" content="福豐石藝專注於高硬度石材骨灰罐，結合 921 地震研發經驗，推出專利塘瓷琺瑯內膽。包含碧玉、岫玉、白冰玉及花崗石系列。提供防火、防震、防潮五合一全方位守護。">
+    <meta name="keywords" content="福豐石藝, 骨灰罐, 骨灰罈, 南非黑, 加拿大碧玉, 防潮內膽, 莫氏硬度, 921防震骨灰罐">
+    
     <script type="application/ld+json">
     {
       "@context": "https://schema.org/",
       "@type": "Product",
-      "name": "極致永恆 頂級骨灰罐系列",
-      "brand": {"@type": "Brand", "name": "Eternal Peace"},
-      "description": "具備專業地質數據認證的頂級防潮骨灰罐，涵蓋軟玉、花崗岩及稀有寶石材質。",
-      "category": "Funeral Supplies / Fine Art",
+      "name": "福豐石藝 專利系列骨灰罐",
+      "image": "https://yourdomain.com/main-product.jpg",
+      "description": "具備專利防震內膽與防潮活性碳功能的頂級石材骨灰罐，源自 921 救災研發靈感。",
+      "brand": { "@type": "Brand", "name": "福豐石藝" },
       "offers": {
         "@type": "AggregateOffer",
         "priceCurrency": "TWD",
-        "lowPrice": "95000",
-        "highPrice": "350000"
+        "lowPrice": "30000",
+        "highPrice": "500000"
       }
     }
     </script>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;700;900&family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
+    
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        'jade-black': '#050a09',
-                        'jade-deep': '#121f1a',
-                        'gold-matte': '#af925d',
-                        'gold-light': '#e5d5b5',
-                        'paper-white': '#fcfbf9',
+                        'stone-primary': '#1c1c1c',
+                        'stone-gold': '#c5a059',
+                        'stone-accent': '#f4f1ea'
                     },
                     fontFamily: {
                         serif: ['"Noto Serif TC"', 'serif'],
@@ -58,143 +49,115 @@
 
     <style>
         [x-cloak] { display: none !important; }
-        .lux-transition { transition: all 0.8s cubic-bezier(0.2, 0, 0, 1); }
-        .text-justify-custom { text-align: justify; text-justify: inter-word; }
-        .gold-gradient { background: linear-gradient(135deg, #af925d 0%, #e5d5b5 50%, #af925d 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .glass-nav { background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(20px); }
-        ::-webkit-scrollbar { width: 4px; }
-        ::-webkit-scrollbar-thumb { background: #af925d; }
+        .hero-gradient { background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)); }
+        .inner-page-shadow { box-shadow: 0 10px 50px rgba(0,0,0,0.2); }
     </style>
 </head>
-<body class="bg-paper-white text-jade-deep font-sans antialiased" x-data="eternalApp()">
+<body class="bg-stone-accent text-stone-primary font-sans" x-data="fufengApp()">
 
-    <nav class="fixed w-full z-[100] lux-transition border-b border-gold-matte/10 glass-nav py-6" 
-         :class="scrollY > 50 ? 'py-4 shadow-lg' : 'py-8 bg-transparent'">
-        <div class="max-w-[1700px] mx-auto px-10 flex justify-between items-center">
-            <div class="flex items-center space-x-6 cursor-pointer" @click="window.scrollTo(0,0)">
-                <div class="w-12 h-12 bg-jade-deep flex items-center justify-center rotate-45 shadow-xl">
-                    <span class="text-white -rotate-45 font-serif font-bold text-xl">永</span>
-                </div>
-                <div class="hidden lg:block">
-                    <h1 class="font-serif text-2xl font-black tracking-[0.3em] leading-none uppercase">極致永恆</h1>
-                    <span class="text-[8px] uppercase tracking-[0.6em] text-gold-matte font-bold">Scientific & Artistic Heritage</span>
-                </div>
+    <nav class="fixed w-full z-[100] bg-white/90 backdrop-blur-md border-b border-stone-gold/30">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <div class="text-2xl font-serif font-black tracking-widest border-l-4 border-stone-gold pl-3">福豐石藝</div>
             </div>
-            <div class="flex items-center space-x-12">
-                <div class="hidden md:flex space-x-10 text-[10px] font-black tracking-[0.5em] uppercase">
-                    <a href="#geology" class="hover:text-gold-matte lux-transition">材質科學</a>
-                    <a href="#collection" class="hover:text-gold-matte lux-transition">珍稀典藏</a>
-                    <a href="#faq" class="hover:text-gold-matte lux-transition">常見問題</a>
-                </div>
-                <button @click="cartOpen = true" class="relative group">
-                    <svg class="w-5 h-5 group-hover:text-gold-matte lux-transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" stroke-width="1.5"/></svg>
-                    <span x-show="cart.length" class="absolute -top-2 -right-2 bg-gold-matte text-white text-[8px] w-4 h-4 rounded-full flex items-center justify-center" x-text="cart.length"></span>
-                </button>
+            <div class="hidden lg:flex space-x-10 text-xs font-bold tracking-widest uppercase">
+                <a href="#about" class="hover:text-stone-gold transition">品牌由來</a>
+                <a href="#collection" class="hover:text-stone-gold transition">典藏清單</a>
+                <a href="#science" class="hover:text-stone-gold transition">硬度科學</a>
+                <a href="#patented" class="hover:text-stone-gold transition">專利技術</a>
             </div>
+            <a href="https://line.me" class="bg-stone-gold text-white px-6 py-2 rounded text-xs font-bold hover:bg-stone-primary transition">諮詢下單</a>
         </div>
     </nav>
 
-    <header class="relative h-screen flex items-center justify-center overflow-hidden bg-jade-black">
-        <div class="absolute inset-0 scale-105">
-            <img src="https://images.unsplash.com/photo-1615529182904-14819c35db37?q=80&w=2000" class="w-full h-full object-cover opacity-60">
-        </div>
-        <div class="absolute inset-0 bg-gradient-to-b from-jade-black/40 via-transparent to-jade-black"></div>
-        <div class="relative z-20 text-center px-6">
-            <span class="gold-gradient tracking-[1.2em] font-black text-xs mb-12 block">PRECISION GEOLOGY & ETERNAL ART</span>
-            <h2 class="font-serif text-6xl md:text-[8rem] text-white font-black leading-tight mb-16 italic">
-                跨越時光的<span class="font-light">溫潤</span>
-            </h2>
-            <div class="flex justify-center">
-                <a href="#collection" class="px-16 py-6 border border-gold-matte/30 text-white text-[10px] font-black tracking-[0.5em] hover:bg-gold-matte hover:text-jade-black lux-transition uppercase">
-                    探索典藏系列
-                </a>
+    <header class="relative h-[80vh] flex items-center justify-center text-white overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1605246811037-7a815fa646e4?q=80&w=2000')] bg-cover bg-center scale-105"></div>
+        <div class="absolute inset-0 hero-gradient"></div>
+        <div class="relative z-10 text-center px-6">
+            <h2 class="text-stone-gold font-bold tracking-[0.5em] mb-6 animate-pulse">精工雕琢 ‧ 萬世安寧</h2>
+            <h1 class="text-5xl md:text-7xl font-serif font-black mb-10 leading-tight">為生命留存<br>最溫潤的尊嚴</h1>
+            <div class="flex flex-col md:flex-row justify-center gap-6">
+                <a href="#collection" class="px-10 py-4 bg-stone-gold text-white font-bold tracking-widest hover:scale-105 transition">探索全系列目錄</a>
+                <a href="#about" class="px-10 py-4 border border-white text-white font-bold tracking-widest hover:bg-white hover:text-stone-primary transition">了解 921 研發故事</a>
             </div>
         </div>
     </header>
 
-    
-    <section id="geology" class="py-40 bg-white">
-        <div class="max-w-[1400px] mx-auto px-10 grid lg:grid-cols-2 gap-32 items-center">
-            <div class="space-y-10">
-                <span class="text-gold-matte font-black tracking-[0.4em] text-xs uppercase italic">Scientific Standard</span>
-                <h3 class="font-serif text-5xl md:text-7xl font-bold leading-tight">不隨時間<br>妥協的物理性。</h3>
-                <article class="text-gray-500 text-justify-custom text-lg font-light leading-relaxed">
-                    在台灣高達 80% 的環境濕度下，骨灰罐的防潮力取決於石材的**微觀交織結構**。我們選用的加拿大碧玉具備天然的「纖維狀構造」，使其吸水率低於 **0.05%**。這不僅僅是器皿，更是利用地球數億年壓力萃取出的物理級密封空間。
-                </article>
-                <div class="mt-16 overflow-hidden shadow-2xl">
-                    <table class="w-full text-left border-collapse">
-                        <thead>
-                            <tr class="bg-jade-deep text-white text-[10px] tracking-widest uppercase font-bold">
-                                <th class="p-6">物理指標</th>
-                                <th class="p-6">標準大理石</th>
-                                <th class="p-6 text-gold-matte">極致永恆基準</th>
-                            </tr>
-                        </thead>
-                        <tbody class="text-sm text-gray-600">
-                            <tr class="border-b border-gray-100 italic"><td class="p-6 font-bold">莫氏硬度</td><td class="p-6">3.0 - 4.0</td><td class="p-6 text-jade-deep font-black">6.0 - 7.5</td></tr>
-                            <tr class="border-b border-gray-100 italic"><td class="p-6 font-bold">平均吸水率</td><td class="p-6">> 0.3%</td><td class="p-6 text-green-700 font-black">< 0.08%</td></tr>
-                        </tbody>
-                    </table>
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-20 items-center">
+                <div class="order-2 lg:order-1">
+                    <span class="text-stone-gold font-bold text-sm tracking-widest italic block mb-4 uppercase">The Origin of Patent</span>
+                    <h3 class="text-4xl font-serif font-bold mb-8">為什麼福豐堅持<br>「防火、防震、防潮」？</h3>
+                    <div class="space-y-6 text-gray-600 leading-relaxed text-justify">
+                        <p>民國 88 年的 <strong>921 大地震</strong>，造成無數納骨塔受損，骨灰罐破損導致遺骸混淆，這對家屬是二度傷害。福豐石藝以此為鑒，投入多年研發。</p>
+                        <p>我們引進<strong>比利時專用粉體釉料</strong>，配合靜電電塗裝設備，開模製作出具備專利結構的「塘瓷琺瑯內膽」。</p>
+                        <div class="grid grid-cols-2 gap-4 mt-8">
+                            <div class="p-4 bg-stone-accent border-l-2 border-stone-gold">
+                                <h4 class="font-bold text-stone-primary text-sm mb-2">活性碳技術</h4>
+                                <p class="text-xs">專利吸濕結構，確保內部永久乾燥，防霉變質。</p>
+                            </div>
+                            <div class="p-4 bg-stone-accent border-l-2 border-stone-gold">
+                                <h4 class="font-bold text-stone-primary text-sm mb-2">定時唸佛機</h4>
+                                <p class="text-xs">佛音引路，給予先人最平靜的極樂指引。</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="bg-jade-deep p-16 text-white relative">
-                <div class="absolute top-0 right-0 p-8 opacity-10 font-serif text-9xl italic">0.05%</div>
-                <h4 class="font-serif text-3xl mb-10 text-gold-light">地質穩定性公式</h4>
-                <div class="bg-white/5 p-10 font-serif italic text-gold-matte/80 text-xl rounded-sm mb-10">
-                    $$Stability = \frac{Hardness}{Absorbency} \times 100$$
+                <div class="order-1 lg:order-2 bg-stone-primary p-12 text-white">
+                    <h4 class="text-stone-gold font-serif text-2xl mb-8 uppercase tracking-widest">五合一全方位內膽</h4>
+                    <ul class="space-y-6">
+                        <li class="flex items-center gap-4 border-b border-white/10 pb-4">
+                            <span class="text-2xl font-serif text-stone-gold">01</span> <span>七寶如意：尊榮加持</span>
+                        </li>
+                        <li class="flex items-center gap-4 border-b border-white/10 pb-4">
+                            <span class="text-2xl font-serif text-stone-gold">02</span> <span>專利內膽：抗震防護</span>
+                        </li>
+                        <li class="flex items-center gap-4 border-b border-white/10 pb-4">
+                            <span class="text-2xl font-serif text-stone-gold">03</span> <span>定時唸佛機：佛法指引</span>
+                        </li>
+                        <li class="flex items-center gap-4 border-b border-white/10 pb-4">
+                            <span class="text-2xl font-serif text-stone-gold">04</span> <span>活性碳：絕對防潮</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <span class="text-2xl font-serif text-stone-gold">05</span> <span>經典經文：永世祈福</span>
+                        </li>
+                    </ul>
                 </div>
-                <p class="text-sm text-gray-400 font-light leading-loose">
-                    唯有極高硬度與極低吸水率的交集，才能被稱之為「永恆」。這是我們篩選原礦的唯一標準。
-                </p>
             </div>
         </div>
     </section>
 
-    <section class="py-40 bg-jade-black text-white overflow-hidden">
-        <div class="max-w-[1700px] mx-auto px-10 text-center mb-32">
-            <h3 class="font-serif text-5xl md:text-7xl font-bold mb-8">匠心守護</h3>
-            <p class="text-gray-500 tracking-[0.5em] text-xs uppercase italic">The 12-Step Master Craftsmanship</p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-px bg-white/10">
-            <template x-for="(step, i) in craftSteps" :key="i">
-                <div class="bg-jade-black p-12 hover:bg-gold-matte lux-transition group border border-white/5 cursor-default text-center">
-                    <span class="text-gold-matte group-hover:text-jade-black font-mono text-xs block mb-8" x-text="'STEP ' + (i+1)"></span>
-                    <h4 class="font-bold text-lg mb-4 group-hover:text-jade-deep" x-text="step.title"></h4>
-                    <p class="text-[11px] text-gray-500 group-hover:text-jade-deep/80 leading-relaxed" x-text="step.desc"></p>
+    <section id="collection" class="py-24 bg-stone-accent">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+                <div>
+                    <h2 class="text-4xl font-serif font-black mb-4">典藏全系列目錄</h2>
+                    <p class="text-gray-500">嚴選地質學標準原礦，經十二道工序精製而成</p>
                 </div>
-            </template>
-        </div>
-    </section>
-
-    <section id="collection" class="py-40 bg-paper-white">
-        <div class="max-w-[1700px] mx-auto px-10">
-            <div class="flex flex-col lg:flex-row justify-between items-end mb-32">
-                <h3 class="font-serif text-6xl font-black">珍稀<span class="gold-gradient">典藏</span></h3>
-                <div class="flex space-x-1 bg-gray-100 p-1 rounded-full mt-10">
-                    <template x-for="cat in ['全部', '軟玉', '花崗', '寶石']">
-                        <button @click="filter = cat" 
-                                :class="filter === cat ? 'bg-jade-deep text-white shadow-xl' : 'text-gray-400'"
-                                class="px-12 py-3 rounded-full text-[10px] font-black tracking-widest transition-all duration-500 uppercase"
+                <div class="flex flex-wrap gap-2">
+                    <template x-for="cat in categories">
+                        <button @click="activeCat = cat" 
+                                :class="activeCat === cat ? 'bg-stone-primary text-white' : 'bg-white text-gray-400 hover:bg-gray-100'"
+                                class="px-6 py-2 text-xs font-bold tracking-widest rounded-full transition-all uppercase"
                                 x-text="cat"></button>
                     </template>
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-24">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <template x-for="product in filteredProducts" :key="product.id">
-                    <div class="group flex flex-col cursor-pointer" @click="openModal(product)">
-                        <div class="relative aspect-[3/4] overflow-hidden bg-white mb-10 shadow-lg hover:shadow-2xl lux-transition">
-                            <img :src="product.image" class="w-full h-full object-cover lux-transition group-hover:scale-110">
+                    <div class="group bg-white overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 cursor-pointer" @click="openModal(product)">
+                        <div class="aspect-[4/5] bg-gray-100 relative overflow-hidden">
+                            <img :src="product.img" :alt="product.name" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                            <div class="absolute top-4 right-4 bg-white/90 px-3 py-1 text-[10px] font-bold tracking-tighter uppercase" x-text="product.series"></div>
                         </div>
-                        <div class="px-4">
-                            <div class="flex justify-between items-center mb-4">
-                                <span class="text-[9px] text-gold-matte font-black tracking-[0.4em] uppercase" x-text="product.category"></span>
-                                <span class="text-[9px] text-gray-300 font-mono tracking-widest" x-text="product.ref"></span>
-                            </div>
-                            <h4 class="font-serif text-3xl font-bold mb-10 group-hover:text-gold-matte lux-transition" x-text="product.name"></h4>
-                            <div class="flex justify-between items-center pt-8 border-t border-gray-100">
-                                <span class="font-serif text-xl" x-text="'NT$ ' + product.price.toLocaleString()"></span>
-                                <button class="text-[10px] font-black tracking-widest border-b-2 border-jade-deep pb-1">鑑賞細節</button>
+                        <div class="p-6">
+                            <h3 class="text-lg font-bold mb-2 group-hover:text-stone-gold transition" x-text="product.name"></h3>
+                            <p class="text-xs text-gray-400 mb-6" x-text="product.tagline"></p>
+                            <div class="flex justify-between items-center pt-4 border-t border-gray-50">
+                                <span class="text-xs font-serif italic text-stone-gold" x-text="'Mohs: ' + product.hardness"></span>
+                                <span class="text-[10px] font-bold uppercase tracking-widest">詳情內頁 ➔</span>
                             </div>
                         </div>
                     </div>
@@ -203,139 +166,171 @@
         </div>
     </section>
 
-    <div x-show="showModal" class="fixed inset-0 z-[200] flex items-center justify-center p-4 md:p-12" x-cloak>
-        <div class="absolute inset-0 bg-jade-black/95 backdrop-blur-xl" @click="showModal = false" x-transition.opacity></div>
-        
-        <div class="relative bg-white w-full max-w-7xl max-h-[90vh] overflow-y-auto grid lg:grid-cols-2 shadow-2xl" x-transition.scale.95>
-            <div class="bg-paper-white p-12 flex flex-col items-center justify-center border-r border-gray-100">
-                <img :src="activeItem?.image" class="w-full max-w-md shadow-2xl mb-12">
-                <div class="flex space-x-4">
-                    <template x-for="feat in activeItem?.features" :key="feat">
-                        <span class="px-4 py-2 border border-gold-matte/30 text-[9px] text-gold-matte font-bold tracking-widest uppercase" x-text="feat"></span>
-                    </template>
-                </div>
+    <section id="science" class="py-24 bg-white">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl font-serif font-bold mb-4">專業石材鑑定數據</h3>
+                <p class="text-gray-400">只有足夠的硬度，才能抵擋台灣高濕多震的氣候</p>
             </div>
-            <div class="p-10 md:p-20 flex flex-col">
-                <button @click="showModal = false" class="self-end text-gray-300 hover:text-jade-deep mb-10">✕ CLOSE</button>
-                <span class="text-gold-matte font-black tracking-[0.5em] text-[10px] uppercase mb-4 block" x-text="activeItem?.category + ' | ' + activeItem?.ref"></span>
-                <h2 class="font-serif text-4xl md:text-5xl font-bold mb-12" x-text="activeItem?.name"></h2>
+            <div class="overflow-hidden border border-stone-gold/20 rounded-lg">
+                <table class="w-full text-left bg-white">
+                    <thead class="bg-stone-primary text-stone-gold text-xs tracking-[0.2em] uppercase">
+                        <tr>
+                            <th class="p-6">石材類別</th>
+                            <th class="p-6">莫氏硬度 (Mohs)</th>
+                            <th class="p-6">防潮表現</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sm divide-y divide-gray-100">
+                        <tr><td class="p-6 font-bold">鑽石</td><td class="p-6">10</td><td class="p-6">極限</td></tr>
+                        <tr class="bg-stone-accent/30"><td class="p-6 font-bold text-red-700">紅寶石 / 藍寶石</td><td class="p-6">9</td><td class="p-6">優等</td></tr>
+                        <tr><td class="p-6 font-bold text-stone-gold">碧玉 / 輝玉 (軟玉)</td><td class="p-6">6.5 - 7</td><td class="p-6 text-green-700 font-bold">98-99% 不吸水</td></tr>
+                        <tr class="bg-stone-accent/30"><td class="p-6 font-bold">玉石 / 彩玉</td><td class="p-6">6.5 - 7</td><td class="p-6">優等 (玻璃質地)</td></tr>
+                        <tr><td class="p-6 font-bold">岫玉 / 緬甸玉</td><td class="p-6">5 - 6</td><td class="p-6">良好</td></tr>
+                        <tr class="bg-stone-accent/30"><td class="p-6 font-bold text-gray-400">花崗石 (南非黑)</td><td class="p-6">4</td><td class="p-6 text-gray-400">毛細孔稍大</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <div x-show="showModal" class="fixed inset-0 z-[200] flex items-center justify-center p-4 md:p-12" x-cloak x-transition.opacity>
+        <div class="absolute inset-0 bg-stone-primary/95 backdrop-blur-md" @click="showModal = false"></div>
+        
+        <div class="relative bg-white w-full max-w-6xl max-h-[90vh] overflow-y-auto inner-page-shadow grid lg:grid-cols-2" x-transition.scale.95>
+            <div class="bg-stone-accent flex items-center justify-center p-12 relative">
+                <button @click="showModal = false" class="absolute top-6 left-6 lg:hidden text-stone-primary text-2xl">✕</button>
+                <img :src="activeItem?.img" class="w-full max-w-md drop-shadow-2xl">
+                <div class="absolute bottom-8 left-8 text-[10px] font-mono text-stone-gold/50" x-text="'REF: FUFENG-' + activeItem?.id"></div>
+            </div>
+            
+            <div class="p-8 md:p-16 overflow-y-auto">
+                <button @click="showModal = false" class="hidden lg:block absolute top-8 right-8 text-gray-300 hover:text-stone-primary transition">✕ CLOSE</button>
                 
-                <div class="space-y-8 mb-16">
-                    <h4 class="text-xs font-black tracking-widest border-b border-gray-100 pb-2 italic uppercase">地質特徵與守護敘事</h4>
-                    <p class="text-gray-500 text-lg leading-loose text-justify font-light" x-text="activeItem?.desc"></p>
-                </div>
+                <span class="text-stone-gold font-bold tracking-[0.3em] text-[10px] uppercase mb-4 block" x-text="activeItem?.series"></span>
+                <h2 class="text-4xl font-serif font-black mb-8" x-text="activeItem?.name"></h2>
+                
+                <div class="space-y-10">
+                    <article>
+                        <h4 class="text-xs font-black tracking-widest border-b border-gray-100 pb-2 mb-4 italic">【 材質地質學描述 】</h4>
+                        <p class="text-gray-500 text-sm leading-relaxed text-justify" x-text="activeItem?.desc"></p>
+                    </article>
 
-                <div class="bg-paper-white p-8 space-y-4 border-l-2 border-gold-matte mb-12">
-                    <h4 class="text-[10px] font-black tracking-widest uppercase mb-6">物理鑑定數據 (ASTM Standard)</h4>
-                    <div class="grid grid-cols-2 gap-y-4 text-xs">
-                        <div class="text-gray-400 italic font-serif">Mineralogy / 礦物組成</div><div class="font-bold" x-text="activeItem?.specs.mineral"></div>
-                        <div class="text-gray-400 italic font-serif">Hardness / 莫氏硬度</div><div class="font-bold" x-text="activeItem?.specs.hardness"></div>
-                        <div class="text-gray-400 italic font-serif">Absorbency / 吸水率</div><div class="font-bold text-green-700 font-mono" x-text="activeItem?.specs.absorbency"></div>
-                        <div class="text-gray-400 italic font-serif">Origin / 原產地</div><div class="font-bold italic" x-text="activeItem?.specs.origin"></div>
+                    <div class="grid grid-cols-2 gap-8 py-8 border-y border-gray-50">
+                        <div>
+                            <span class="block text-[10px] text-gray-400 uppercase mb-1">莫氏硬度</span>
+                            <span class="font-bold font-serif" x-text="activeItem?.hardness"></span>
+                        </div>
+                        <div>
+                            <span class="block text-[10px] text-gray-400 uppercase mb-1">吸水率 (SGS)</span>
+                            <span class="font-bold font-serif text-green-700" x-text="activeItem?.absorbency"></span>
+                        </div>
+                        <div>
+                            <span class="block text-[10px] text-gray-400 uppercase mb-1">透光性能</span>
+                            <span class="font-bold" x-text="activeItem?.translucent ? '具強透光性' : '實心不透光'"></span>
+                        </div>
+                        <div>
+                            <span class="block text-[10px] text-gray-400 uppercase mb-1">內膽配置</span>
+                            <span class="font-bold">專利五合一相容</span>
+                        </div>
                     </div>
-                </div>
 
-                <div class="mt-auto grid grid-cols-2 gap-4">
-                    <button @click="addToCart(activeItem)" class="bg-jade-deep text-white py-6 text-[10px] font-black tracking-[0.5em] uppercase hover:bg-gold-matte lux-transition">加入諮詢</button>
-                    <button class="border border-gray-200 py-6 text-[10px] font-black tracking-[0.5em] uppercase hover:bg-paper-white">預約鑑賞</button>
+                    <article class="bg-stone-accent p-6 border-l-4 border-stone-gold">
+                        <h4 class="text-xs font-bold mb-2">福豐石藝鑑賞建議：</h4>
+                        <p class="text-xs text-gray-600 leading-relaxed" x-text="activeItem?.advice"></p>
+                    </article>
+
+                    <div class="pt-8">
+                        <a href="https://line.me" class="block w-full bg-stone-primary text-white text-center py-5 text-sm font-bold tracking-[0.2em] hover:bg-stone-gold transition duration-500">立即預約實品鑑賞</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <section id="faq" class="py-40 bg-white border-t border-gray-50">
-        <div class="max-w-[1000px] mx-auto px-10">
-            <h3 class="font-serif text-4xl text-center mb-24 font-bold tracking-widest italic">知識專欄 ‧ 常見問題</h3>
-            <div class="space-y-4">
-                <template x-for="(f, i) in faqs" :key="i">
-                    <div class="border border-gray-100 overflow-hidden">
-                        <button @click="faqActive === i ? faqActive = null : faqActive = i" 
-                                class="w-full p-8 text-left flex justify-between items-center hover:bg-paper-white lux-transition">
-                            <span class="font-bold text-sm tracking-widest" x-text="f.q"></span>
-                            <span class="text-gold-matte transition-transform duration-500" :class="faqActive === i ? 'rotate-45' : ''">+</span>
-                        </button>
-                        <div x-show="faqActive === i" x-collapse class="px-8 pb-8 text-sm text-gray-500 leading-relaxed text-justify-custom" x-text="f.a"></div>
-                    </div>
-                </template>
-            </div>
-        </div>
-    </section>
-
-    <footer class="bg-jade-black text-white py-40 px-10 border-t border-white/5">
-        <div class="max-w-[1700px] mx-auto grid md:grid-cols-4 gap-32">
-            <div class="md:col-span-2 space-y-12">
-                <h3 class="font-serif text-4xl font-black tracking-widest">極致永恆.</h3>
-                <p class="text-gray-500 text-lg leading-loose max-w-xl font-light italic">專業、嚴謹、慈悲。我們理解這不僅是一個器皿，更是生命尊嚴與家族情感的最後棲息地。</p>
+    <footer id="contact" class="bg-stone-primary text-white py-24 px-6 border-t border-stone-gold/20">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-20">
+            <div class="col-span-1">
+                <div class="text-3xl font-serif font-black mb-8">福豐石藝</div>
+                <p class="text-gray-500 text-sm leading-loose">我們深知這不僅是器皿，更是家族情感的最後棲息地。以科學嚴謹守護，以藝術溫潤傳承。</p>
             </div>
             <div>
-                <h4 class="text-gold-matte font-black uppercase tracking-[0.4em] text-[10px] mb-12 italic">服務導航</h4>
-                <ul class="space-y-6 text-xs text-gray-500 font-light tracking-[0.2em]">
-                    <li>SGS 防潮鑑定報告</li>
-                    <li>加拿大礦區溯源手冊</li>
-                    <li>全台實品鑑賞預約</li>
+                <h4 class="text-stone-gold font-bold text-xs tracking-widest uppercase mb-8 italic">服務中心</h4>
+                <ul class="space-y-4 text-xs text-gray-400 font-light">
+                    <li>24H 全台專業諮詢</li>
+                    <li>SGS 石材防潮鑑定報告</li>
+                    <li>專利內膽售後保障</li>
+                    <li>產地溯源認證</li>
                 </ul>
             </div>
             <div>
-                <h4 class="text-gold-matte font-black uppercase tracking-[0.4em] text-[10px] mb-12 italic">諮詢熱線</h4>
-                <p class="text-4xl font-serif mb-6 leading-none">0800-888-888</p>
-                <p class="text-[10px] text-gray-600 tracking-[0.4em] uppercase">24 Hours / 7 Days<br>Professional Consultation</p>
+                <h4 class="text-stone-gold font-bold text-xs tracking-widest uppercase mb-8 italic">預約熱線</h4>
+                <p class="text-3xl font-serif mb-4">0800-888-888</p>
+                <p class="text-[10px] text-gray-600 leading-relaxed">我們提供全台實品看貨服務，<br>專業專員為您解說石材物理特性。</p>
             </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-20 pt-8 border-t border-white/5 text-[10px] text-gray-700 text-center tracking-widest uppercase">
+            &copy; 2026 FUFENG STONE ART. ALL RIGHTS RESERVED.
         </div>
     </footer>
 
     <script>
-        function eternalApp() {
+        function fufengApp() {
             return {
-                filter: '全部',
-                scrollY: 0,
+                activeCat: '全部',
                 showModal: false,
                 activeItem: null,
-                faqActive: null,
-                cart: [],
-                craftSteps: [
-                    { title: "礦脈直採", desc: "僅取核心原石，排除表面風化層。" },
-                    { title: "超聲掃描", desc: "利用超音波探測內部應力，確保結構完整。" },
-                    { title: "精密CNC", desc: "0.05mm 等級加工，確保蓋口絕對氣密。" },
-                    { title: "純植物水磨", desc: "由 400 到 6000 號拋光片手工精修。" },
-                    { title: "物理氣封", desc: "專利負壓技術，在封存時排除多餘濕氣。" },
-                    { title: "環境模擬", desc: "通過 72 小時高溫高濕壓力箱測試。" }
-                ],
-                faqs: [
-                    { q: "為什麼莫氏硬度 6 以上是基本要求？", a: "莫氏硬度 6 以上的石材如軟玉、花崗岩，具備極高的化學穩定性，能抵抗溫差引起的熱脹冷縮，避免產生微小裂縫而受潮。" },
-                    { q: "低吸水率對骨灰有什麼實質保護？", a: "台灣氣候潮濕，吸水率高的石材會將水分滲透進內室。我們嚴選吸水率低於 0.08% 的石材，能形成物理性隔絕。" },
-                    { q: "如何辨別天然石材與人造石？", a: "天然石材具備溫控性與獨一無二的紋理。極致永恆每一尊作品皆附帶產地履歷與地質鑑定書，保證價值。" }
-                ],
+                categories: ['全部', '花崗石系列', '岫玉系列', '玉石系列', '碧玉系列', '專利系列'],
                 products: [
                     { 
-                        id: 1, ref: 'JN-2026-CA', name: "北極蒼翠 | 加拿大頂級碧玉", category: "軟玉", price: 188000, 
-                        image: "https://images.unsplash.com/photo-1615529182904-14819c35db37?q=80&w=1200",
-                        desc: "源自加拿大高寒礦區，地質學上屬於「纖維狀交織結構」之軟玉。其強韌的分子鍵結使其具備極佳的耐震性與抗溫差力，是目前防潮效能最高的頂級石材。",
-                        specs: { mineral: "透閃石 Tremolite", hardness: "6.2 - 6.5 Mohs", absorbency: "0.05% (SGS)", origin: "加拿大卑詩省" },
-                        features: ["天然溫潤", "超高韌性", "百年不褪"]
+                        id: 1, name: "南非黑 (陽刻金經)", series: "花崗石系列", hardness: "4.0", tagline: "經典莊嚴，金墨交輝", 
+                        img: "https://placehold.jp/24/1a1a1a/ffffff/800x1000.png?text=南非黑陽刻",
+                        absorbency: "0.15%", translucent: false,
+                        desc: "源自南非優質花崗岩層，質地極度堅硬且化學性質穩定。此款採用陽刻技術將祈福經文立體呈現，金色字體與深邃黑礦形成鮮明對比，極具威嚴感。",
+                        advice: "適合預算考量下，仍希望展現家族莊嚴與氣派的首選。建議搭配專利防潮內膽使用。"
                     },
                     { 
-                        id: 2, ref: 'GS-SA-09', name: "墨影星際 | 南非極致黑金石", category: "花崗", price: 95000, 
-                        image: "https://images.unsplash.com/photo-1517520430389-700977e20a06?q=80&w=1200",
-                        desc: "結晶體極細小的輝長岩。硬度極高，化學性質極度穩定，能抵抗各類酸鹼腐蝕。深邃的鏡面光澤中隱含微量礦物星點，是物理防潮領域的首選。",
-                        specs: { mineral: "輝長岩 Gabbro", hardness: "7.0 - 7.5 Mohs", absorbency: "0.03% (極限值)", origin: "南非高壓礦帶" },
-                        features: ["絕對耐酸", "最高硬度", "防腐氣封"]
+                        id: 2, name: "紅寶石素面", series: "花崗石系列", hardness: "4.0", tagline: "溫潤紅艷，細膩光澤", 
+                        img: "https://placehold.jp/24/800000/ffffff/800x1000.png?text=紅寶石素面",
+                        absorbency: "0.12%", translucent: false,
+                        desc: "採集自特定深度岩層，紋路規律且變異小。色澤呈現深沉的酒紅，象徵鴻圖大展與後代福份。",
+                        advice: "性價比極高的穩定材質，福豐嚴選原礦，確保無裂縫與雜質。"
                     },
                     { 
-                        id: 3, ref: 'GEMS-RD-88', name: "紅龍麟耀 | 稀有變質紅龍玉", category: "寶石", price: 220000, 
-                        image: "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200",
-                        desc: "稀有變質岩寶石，擁有如火龍雲彩般的孤品紋理。石質細膩透光，不僅具備地質學上的稀有性，更在藝術鑑賞與風水佈局上具有不可替代的地位。",
-                        specs: { mineral: "矽質玉體 Siliceous Jade", hardness: "5.5 - 6.0 Mohs", absorbency: "0.12% (優等)", origin: "東亞高山礦區" },
-                        features: ["透光藝術", "紋理獨一", "家族傳承"]
+                        id: 3, name: "芙蓉岫玉", series: "岫玉系列", hardness: "5.0-5.5", tagline: "中國名玉，溫潤如脂", 
+                        img: "https://placehold.jp/24/c1d8c1/1a1a1a/800x1000.png?text=芙蓉岫玉",
+                        absorbency: "0.08%", translucent: true,
+                        desc: "岫玉為中國四大名玉。其結構呈放射纖維狀，質地細膩。內含翠綠透明晶體為玉髓，硬度可達 7 度。手感極佳，如凝脂般細滑。",
+                        advice: "玉石具備靈氣，適合重視風水與材質質感的高階客戶。"
+                    },
+                    { 
+                        id: 4, name: "白冰玉 (特級)", series: "玉石系列", hardness: "6.5-7.0", tagline: "晶瑩剔透，冰清玉潔", 
+                        img: "https://placehold.jp/24/f0f0f0/1a1a1a/800x1000.png?text=白冰玉",
+                        absorbency: "0.05%", translucent: true,
+                        desc: "玻璃質地玉石之冠。透光性極強，石質極其綿密。在燈光下能顯現出如冰塊般的透亮度，俗稱彩玉中的白寶石。",
+                        advice: "此材質極度稀有，建議現場鑑賞其透光美感。"
+                    },
+                    { 
+                        id: 5, name: "加拿大碧玉 (墨綠)", series: "碧玉系列", hardness: "6.5-7.0", tagline: "軟玉之王，絕對防潮", 
+                        img: "https://placehold.jp/24/1e3a1e/ffffff/800x1000.png?text=加拿大碧玉",
+                        absorbency: "0.02%", translucent: false,
+                        desc: "地質學上最穩定的軟玉材质。含鉻元素呈現墨綠色。其分子結構極緊密，幾乎不吸水（不吸水性達 99%），不受任何酸鹼環境影響。",
+                        advice: "若放置地點環境較潮濕，此款為物理性能最強、最推薦的選擇。"
+                    },
+                    { 
+                        id: 6, name: "紅寶三合一 (專利內膽款)", series: "專利系列", hardness: "9.0 (核心)", tagline: "921 防震技術結晶", 
+                        img: "https://placehold.jp/24/b08d57/ffffff/800x1000.png?text=專利三合一",
+                        absorbency: "0.00%", translucent: false,
+                        desc: "福豐獨家專利。外殼為紅寶石級硬度，內置比利時塘瓷琺瑯防震膽、防潮活性碳、定時唸佛機。是結合科技與傳統的最高規格守護。",
+                        advice: "對於地震頻繁地區或高濕度塔位，這是唯一能保證先人永世安寧的方案。"
                     }
                 ],
                 get filteredProducts() {
-                    return this.filter === '全部' ? this.products : this.products.filter(p => p.category === this.filter);
+                    return this.activeCat === '全部' ? this.products : this.products.filter(p => p.series === this.activeCat);
                 },
-                openModal(p) { this.activeItem = p; this.showModal = true; },
-                addToCart(p) { this.cart.push(p); alert('已加入諮詢清單'); }
+                openModal(p) { this.activeItem = p; this.showModal = true; }
             }
         }
-        window.addEventListener('scroll', () => { document.body.__x.$data.scrollY = window.pageYOffset; });
     </script>
 </body>
 </html>
